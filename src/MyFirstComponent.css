@@ -1,0 +1,10 @@
+.redbg {
+  background-color: red;
+}
+.active {
+  background-color: green;
+}
+.wrong {
+  background-color: yellow;
+  color: black;
+}
