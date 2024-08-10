@@ -9,11 +9,11 @@ export default class Sidebar extends Component {
     return (
       <>
         <div className="">
-          <TagButton />
-          <TagButton />
-          <TagButton />
-          <TagButton />
-          <TagButton />
+          <TagButton title="Go" />
+          <TagButton title="Back" />
+          <TagButton title="Next" />
+          <TagButton title="Left" />
+          <TagButton title="Delete" />
         </div>
       </>
     );

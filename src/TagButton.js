@@ -5,7 +5,7 @@ class TagButton extends Component {
     return (
       <div>
         <button type="button" class="myButton">
-          welcome
+          {this.props.title}
         </button>
       </div>
     );

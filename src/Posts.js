@@ -8,9 +8,10 @@ export default class Posts extends Component {
     return (
       <>
         <div className="post">
-          <h2>This is a post</h2>
+          <h2>{this.props.title}</h2>
           <hr />
-          <p>this is the whole content for this post!</p>
+          <p>{this.props.content}</p>
+          {this.props.children}
         </div>
       </>
     );

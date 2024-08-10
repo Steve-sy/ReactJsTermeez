@@ -27,6 +27,7 @@
   border-style: solid;
   border-color: aqua;
   margin: 10px;
+  box-shadow: 0px 1px 10px 0px gray;
 }
 .post {
   border: 2px;
@@ -35,6 +36,7 @@
   padding: 10px;
   text-align: center;
   margin: 10px;
+  box-shadow: 0px 1px 10px 0px gray;
 }
 .myButton {
   box-shadow: inset 0px 1px 0px 0px #bbdaf7;
@@ -49,6 +51,7 @@
   font-size: 15px;
   font-weight: bold;
   padding: 6px 24px;
+  margin: 4px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #528ecc;
 }

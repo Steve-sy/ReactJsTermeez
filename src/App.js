@@ -5,6 +5,7 @@ import "./App.css";
 import MyFirstComponent from "./MyFirstComponent";
 import Main from "./Main";
 import Header from "./Header";
+import Articles from "./Articles";
 
 const person = {
   name: "Mustafa",
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/Articles" element={<Articles />} />
       </Routes>
     </>
   );
