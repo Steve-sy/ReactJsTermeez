@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Posts from "./Posts";
 import Sidebar from "./Sidebar";
+import SearchBar from "./SearchBar";
 
 export default class Main extends Component {
   static propTypes = { second: "" };
@@ -34,6 +35,7 @@ export default class Main extends Component {
     });
     return (
       <>
+        <SearchBar />
         <div className="container">
           <div className="main">
             {postList}

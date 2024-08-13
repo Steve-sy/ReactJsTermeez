@@ -2,8 +2,34 @@ import React, { useEffect, useState } from "react";
 
 const ArticleList = ({ articles }) => {
   return (
-    <div>
-      <h1>Articles</h1>
+    <div style={{ padding: "25px" }}>
+      <div style={{ textAlign: "center" }}>
+        <h1>Articles</h1>
+        <div class="mb-3">
+          <label for="" class="form-label">
+            Search
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id=""
+            aria-describedby="helpId"
+            placeholder=""
+          />
+          <small id="helpId" class="form-text text-muted">
+            Help text
+          </small>
+          <input
+            name=""
+            id=""
+            class="btn btn-primary"
+            type="button"
+            value="Button"
+          />
+        </div>
+      </div>
+
       <ul>
         {articles.map((article, index) => (
           <li key={index} style={{ marginBottom: "20px" }}>
@@ -44,7 +70,7 @@ const Articles = () => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          "https://newsapi.org/v2/everything?q=tesla&from=2024-07-10&sortBy=publishedAt&language=en&apiKey=468cfc31e33f484cb4c93a92017b21a1"
+          "https://newsapi.org/v2/everything?q=australia&from=today&sortBy=publishedAt&language=en&apiKey=468cfc31e33f484cb4c93a92017b21a1X"
         );
         const data = await response.json();
         setArticles(data.articles);
